@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.exam.ExamFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/spacing_xxsmall"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/headerWithTimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_small"
+                        android:layout_marginEnd="@dimen/spacing_small">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/spacing_mini"
+                            android:text="PO Pre SBI 04"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/spacing_mini"
+                            android:layout_toStartOf="@id/buttonSubmit"
+                            android:drawableStart="@drawable/ic_timelapse_white_24dp"
+                            android:drawablePadding="@dimen/spacing_mini"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="00:00"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/md_black_1000" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonSubmit"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/spacing_xxsmall"
+                            android:layout_marginBottom="@dimen/spacing_xxsmall"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/md_white_1000"
+                            android:text="Submit"
+                            app:backgroundTint="@color/colorPrimaryDarkest"
+                            app:cornerRadius="@dimen/spacing_xlarge" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_below="@id/headerWithTimer"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/md_grey_900"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayoutModules"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/headerWithTimer"
+                        android:layout_marginStart="@dimen/spacing_small"
+                        android:layout_marginEnd="@dimen/spacing_small"
+                        android:layout_marginBottom="@dimen/spacing_small"
+                        android:hint="Sections"
+                        app:boxCornerRadiusBottomEnd="@dimen/spacing_xlarge"
+                        app:boxCornerRadiusBottomStart="@dimen/spacing_xlarge"
+                        app:boxCornerRadiusTopEnd="@dimen/spacing_xlarge"
+                        app:boxCornerRadiusTopStart="@dimen/spacing_xlarge"
+                        app:boxStrokeColor="@color/colorPrimaryDark"
+                        app:boxStrokeWidth="0.5dp"
+                        app:hintTextAppearance="@style/AppThemeEditTextHint">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/modulesTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

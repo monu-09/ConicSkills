@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_small">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/textViewJoinUs"
+                android:layout_marginTop="@dimen/spacing_small" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewJoinUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reach us at"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/chipGroupSocial"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupSocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipFacebook"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/text_facebook"
+                    android:textColor="@color/white"
+                    app:iconStartPadding="@dimen/spacing_xsmall"
+                    app:textEndPadding="@dimen/spacing_small"
+                    app:checkedIconEnabled="false"
+                    app:chipStrokeColor="@color/md_blue_900"
+                    app:chipBackgroundColor="@color/md_blue_900"
+                    app:chipCornerRadius="@dimen/spacing_xlarge"
+                    app:chipEndPadding="@dimen/spacing_xxsmall"
+                    app:chipIcon="@drawable/ic_facebook"
+                    app:chipIconTint="@color/white"
+                    app:chipIconEnabled="true"
+                    app:chipStartPadding="@dimen/spacing_xxsmall"
+                    app:chipStrokeWidth=".5dp"
+                    android:elevation="2dp"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipYoutube"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/text_youtube"
+                    android:textColor="@color/white"
+                    app:iconStartPadding="@dimen/spacing_xsmall"
+                    app:textEndPadding="@dimen/spacing_small"
+                    app:checkedIconEnabled="false"
+                    app:chipStrokeColor="@color/md_red_900"
+                    app:chipBackgroundColor="@color/md_red_900"
+                    app:chipCornerRadius="@dimen/spacing_xlarge"
+                    app:chipEndPadding="@dimen/spacing_xxsmall"
+                    app:chipIcon="@drawable/ic_youtube"
+                    app:chipIconTint="@color/white"
+                    app:chipIconEnabled="true"
+                    app:chipStartPadding="@dimen/spacing_xxsmall"
+                    app:chipStrokeWidth=".5dp"
+                    android:elevation="2dp"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTelegram"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/text_telegram"
+                    android:textColor="@color/white"
+                    app:iconStartPadding="@dimen/spacing_xsmall"
+                    app:textEndPadding="@dimen/spacing_small"
+                    app:checkedIconEnabled="false"
+                    app:chipStrokeColor="@color/md_blue_500"
+                    app:chipBackgroundColor="@color/md_blue_500"
+                    app:chipCornerRadius="@dimen/spacing_xlarge"
+                    app:chipEndPadding="@dimen/spacing_xxsmall"
+                    app:chipIcon="@drawable/ic_telegram_app"
+                    app:chipIconTint="@color/white"
+                    app:chipIconEnabled="true"
+                    app:chipStartPadding="@dimen/spacing_xxsmall"
+                    app:chipStrokeWidth=".5dp"
+                    android:elevation="2dp"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

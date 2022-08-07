@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_large"
+    android:layout_marginEnd="@dimen/spacing_large"
+    android:layout_marginBottom="@dimen/spacing_xlarge"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/spacing_large">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTotal"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="3"
+            android:paddingStart="@dimen/spacing_small"
+            android:text="Total Questions"
+            android:textColor="@color/colorViewQuestions" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTotalQuestions"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAttempted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutTotal"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_xsmall"
+        android:layout_marginStart="@dimen/spacing_large">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAttempted"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="3"
+            android:paddingStart="@dimen/spacing_small"
+            android:text="Attempted"
+            android:textColor="@color/md_green_900" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAttemptedQuestions"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUnanswered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutAttempted"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_xsmall"
+        android:layout_marginStart="@dimen/spacing_large">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewUnanswered"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="3"
+            android:paddingStart="@dimen/spacing_small"
+            android:text="Unanswered"
+            android:textColor="@color/md_grey_600" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewUnansweredQuestions"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="18" />
+
+    </LinearLayout>
+</RelativeLayout>

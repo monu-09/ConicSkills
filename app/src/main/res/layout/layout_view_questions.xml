@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/text_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewModule"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xxsmall"
+                android:layout_marginEnd="@dimen/spacing_xxsmall"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/md_white_1000"
+                android:text="Attempted"
+                app:iconStartPadding="@dimen/spacing_xxsmall"
+                app:iconEndPadding="@dimen/spacing_xxsmall"
+                app:chipBackgroundColor="@color/colorViewQuestions"
+                app:chipCornerRadius="@dimen/spacing_xlarge"
+                app:chipStrokeColor="@color/colorViewQuestions"
+                app:chipStrokeWidth=".5dp"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xxsmall"
+                android:layout_marginEnd="@dimen/spacing_xxsmall"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/md_grey_600"
+                android:text="Unattempted"
+                app:iconStartPadding="@dimen/spacing_xxsmall"
+                app:iconEndPadding="@dimen/spacing_xxsmall"
+                app:chipBackgroundColor="@color/md_grey_200"
+                app:chipCornerRadius="@dimen/spacing_xlarge"
+                app:chipStrokeColor="@color/md_grey_200"
+                app:chipStrokeWidth=".5dp"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xxsmall"
+                android:layout_marginEnd="@dimen/spacing_xxsmall"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/md_white_1000"
+                android:text="Marked For Review"
+                app:iconStartPadding="@dimen/spacing_xxsmall"
+                app:iconEndPadding="@dimen/spacing_xxsmall"
+                app:chipBackgroundColor="@color/colorMarkForReview"
+                app:chipCornerRadius="@dimen/spacing_xlarge"
+                app:chipStrokeColor="@color/colorMarkForReview"
+                app:chipStrokeWidth=".5dp" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing_xxsmall"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:background="@color/md_grey_700"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

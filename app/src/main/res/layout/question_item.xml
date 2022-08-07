@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@id/cardViewFooter"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/spacing_xxsmall"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutMarked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/spacing_mini">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_bookmark_white_24dp"
+                        app:tint="@color/colorMarkForReview"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewMarked"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorMarkForReview"
+                        android:layout_marginStart="@dimen/spacing_mini"
+                        android:text="This question has been marked for review." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/headerWithQuestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewQuestionNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/spacing_mini"
+                            android:text="Q1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewQuestionTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/spacing_mini"
+                            android:layout_toEndOf="@id/textViewQuestionNumber"
+                            android:drawableStart="@drawable/ic_access_time_white_24dp"
+                            android:drawablePadding="@dimen/spacing_mini"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="00:00"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/md_black_1000"
+                            android:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewPositiveMarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/spacing_mini"
+                            android:layout_toStartOf="@id/textViewNegativeMarks"
+                            android:gravity="center_vertical"
+                            android:text="+4"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/md_green_800"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewNegativeMarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/spacing_mini"
+                            android:layout_toStartOf="@id/textLayoutLanguages"
+                            android:gravity="center_vertical"
+                            android:text="-0.25"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/md_red_600" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textLayoutLanguages"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/spacing_small"
+                            android:layout_marginEnd="@dimen/spacing_small"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            app:boxCornerRadiusBottomEnd="@dimen/spacing_large"
+                            app:boxCornerRadiusBottomStart="@dimen/spacing_large"
+                            app:boxCornerRadiusTopEnd="@dimen/spacing_large"
+                            app:boxCornerRadiusTopStart="@dimen/spacing_large"
+                            app:boxStrokeColor="@color/colorPrimaryDark"
+                            app:boxStrokeWidth="0.5dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/languagesTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:editable="false"
+                                android:paddingTop="0dp"
+                                android:paddingBottom="0dp"
+                                android:textSize="12sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <WebView
+                        android:id="@+id/webViewDirections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <WebView
+                        android:id="@+id/webViewQuestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewSolution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/spacing_small"
+                        app:cardElevation="@dimen/spacing_small"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayoutSolution"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/animationView"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:scaleType="centerCrop"
+                                app:lottie_autoPlay="false"
+                                app:lottie_loop="true" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/answerText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/animationView"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/spacing_xxsmall"
+                                android:layout_marginBottom="@dimen/spacing_xsmall"
+                                android:layout_marginStart="@dimen/spacing_small"
+                                android:layout_marginEnd="@dimen/spacing_small" />
+
+                            <WebView
+                                android:id="@+id/webViewSolutions"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/answerText"
+                                android:layout_marginTop="@dimen/spacing_xsmall" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/spacing_xxsmall"
+        android:layout_alignParentBottom="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:gravity="end"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonViewQuestions"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:background="@drawable/border_view_questions"
+                    android:drawableStart="@drawable/ic_visibility_white_24dp"
+                    android:drawablePadding="@dimen/spacing_mini"
+                    android:drawableTint="@color/colorViewQuestions"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:text="View Questions"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorViewQuestions" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonClearResponse"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_clear_response"
+                    android:drawableStart="@drawable/ic_block_white_24dp"
+                    android:drawablePadding="@dimen/spacing_mini"
+                    android:drawableTint="@color/colorClearResponse"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:text="Clear Response"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonMark"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_mark_for_review"
+                    android:drawableStart="@drawable/ic_bookmark_white_24dp"
+                    android:drawablePadding="@dimen/spacing_mini"
+                    android:drawableTint="@color/colorMarkForReview"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:text="Mark For Review"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorMarkForReview" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonSave"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_save"
+                    android:drawableStart="@drawable/ic_check_circle_white_24dp"
+                    android:drawablePadding="@dimen/spacing_mini"
+                    android:drawableTint="@color/colorSave"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:text="Save and Next"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorSave" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

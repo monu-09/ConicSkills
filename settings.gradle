@@ -1,0 +1,2 @@
+include ':app', ':youtubejextractor'
+rootProject.name='ConicSkills'

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <!-- Adding 15 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+
+            <include layout="@layout/item_series_list_placeholder" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayoutLanguages"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:hint="Language"
+        android:visibility="gone"
+        app:boxCornerRadiusBottomEnd="@dimen/spacing_xlarge"
+        app:boxCornerRadiusBottomStart="@dimen/spacing_xlarge"
+        app:boxCornerRadiusTopEnd="@dimen/spacing_xlarge"
+        app:boxCornerRadiusTopStart="@dimen/spacing_xlarge"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeWidth="0.5dp"
+        app:hintTextAppearance="@style/AppThemeEditTextHint"
+        tools:ignore="MissingConstraints">
+
+        <AutoCompleteTextView
+            android:id="@+id/languagesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_small"
+            android:editable="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/textLayoutLanguages"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

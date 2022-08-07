@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coursedetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonViewDemo"
+        android:layout_marginBottom="@dimen/spacing_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/spacing_xsmall"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewCourseBanner"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintDimensionRatio="h,20:9"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCourseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xsmall"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_xxlarge" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xsmall">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipLectures"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_xxsmall"
+                    android:layout_marginEnd="@dimen/spacing_xxsmall"
+                    app:chipStartPadding="@dimen/spacing_small"
+                    android:textColor="@color/md_green_800"
+                    android:textSize="@dimen/font_normal"
+                    app:checkedIcon="@drawable/ic_check_white_24dp"
+                    app:checkedIconEnabled="true"
+                    app:chipCornerRadius="@dimen/spacing_xlarge"
+                    app:chipBackgroundColor="@color/md_grey_100"
+                    app:chipIcon="@drawable/ic_time_slot"
+                    app:chipIconTint="@color/md_green_800"
+                    app:chipStrokeColor="@color/md_green_800"
+                    app:chipStrokeWidth=".5dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDuration"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_xxsmall"
+                    android:layout_marginEnd="@dimen/spacing_xxsmall"
+                    android:textColor="@color/colorPrimaryDarkest"
+                    android:textSize="@dimen/font_normal"
+                    app:checkedIcon="@drawable/ic_check_white_24dp"
+                    app:chipStartPadding="@dimen/spacing_small"
+                    app:checkedIconEnabled="true"
+                    app:chipCornerRadius="@dimen/spacing_xlarge"
+                    app:chipBackgroundColor="@color/md_grey_100"
+                    app:chipIcon="@drawable/ic_timeline_white_24dp"
+                    app:chipIconTint="@color/colorPrimaryDarkest"
+                    app:chipStrokeColor="@color/colorPrimaryDarkest"
+                    app:chipStrokeWidth=".5dp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xsmall"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="@string/text_course_description"
+                android:textColor="@color/md_grey_700"
+                android:textSize="@dimen/font_large" />
+
+            <WebView
+                android:id="@+id/webViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xsmall"
+                android:layout_marginTop="@dimen/spacing_small" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/ThemeOverlay.Catalog.MaterialAlertDialog.FilledButton"
+        android:id="@+id/buttonViewDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonBuyNow"
+        android:padding="@dimen/spacing_small"
+        app:cornerRadius="@dimen/spacing_large"
+        app:backgroundTint="@color/md_orange_800"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:text="@string/text_see_demo_video" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/ThemeOverlay.Catalog.MaterialAlertDialog.FilledButton"
+        android:id="@+id/buttonBuyNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/spacing_small"
+        app:cornerRadius="@dimen/spacing_large"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:text="@string/text_buy_now" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip
+    style="@style/Widget.MaterialComponents.Chip.Action"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_xxsmall"
+    android:layout_marginEnd="@dimen/spacing_xxsmall"
+    android:textSize="@dimen/font_normal"
+    android:textColor="@color/persian_green"
+    app:checkedIconEnabled="true"
+    app:chipIcon="@drawable/ic_check_circle_white_24dp"
+    app:chipIconTint="@color/persian_green"
+    app:iconStartPadding="@dimen/spacing_xxsmall"
+    app:iconEndPadding="@dimen/spacing_xxsmall"
+    app:chipBackgroundColor="@color/brand_green_alpha_15"
+    app:chipCornerRadius="@dimen/spacing_xlarge"
+    app:chipStrokeColor="@color/brand_green_alpha_15"
+    app:chipStrokeWidth=".5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

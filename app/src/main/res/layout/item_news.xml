@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewEcgOption"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/spacing_small"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--        <LinearLayout
+                    android:id="@+id/linearLayoutMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/relativeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewNews"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_xxsmall"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewNewsHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_small"
+                android:transitionName="ecg_translation" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewNewsHeading"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewNewsDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="7"
+                    android:ellipsize="end"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/font_normal"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewSubDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayoutNews"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="marquee"
+                android:maxLines="3"
+                android:text="@string/text_click_to_view"
+                android:textColor="@color/md_grey_500"
+                android:textSize="@dimen/font_small"
+                android:transitionName="ecg_translation" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutVideoLecture"
+                android:layout_below="@id/textViewSubDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/spacing_small">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTotalLecture"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/md_green_800"
+                        android:src="@drawable/ic_time_slot" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewTotalLecture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:text="230"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/md_green_800"
+                        android:textSize="@dimen/font_large" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewLecture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:text="Lectures"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/md_grey_600"
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/colorPrimaryDarkest"
+                        android:src="@drawable/ic_timeline_white_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewTotalDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:text="60"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorPrimaryDarkest"
+                        android:textSize="@dimen/font_large" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewDurationtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:layout_gravity="center_vertical"
+                        android:text="mins per lecture"
+                        android:textColor="@color/md_grey_600"
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--        </LinearLayout>-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/textViewEventTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeDescription"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_small"
+            android:transitionName="ecg_translation"
+            app:backgroundTint="@color/persian_red"
+            app:cornerRadius="@dimen/font_normal"
+            app:elevation="0dp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

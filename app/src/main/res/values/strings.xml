@@ -1,0 +1,425 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="text_finish">Finish</string>
+    <string name="text_start">Start</string>
+    <string name="text_loading">Loading</string>
+    <string name="action_retry">Retry</string>
+
+    <string name="text_email">Email</string>
+    <string name="text_buy_now">Buy Now</string>
+
+    <string name="text_click_to_view">Tap here to <b>View Full Story</b></string>
+    <string name="text_click_here_to_view_map">Tap here to <b>View Map</b></string>
+    <string name="text_click_to_call">Tap here to <b>Call</b></string>
+    <string name="text_click_to_compose">Tap here to <b>Compose Mail</b></string>
+    <string name="text_click_to_buy">Click here to <b>Buy</b></string>
+
+    <string name="cprep_phone">Timings: <b>Monday</b> to <b>Friday</b> <b><i>9:00 am</i></b> to <b><i>6:00 pm</i></b></string>
+    <string name="text_designed_by">Designed &amp; Developed by</string>
+    <string name="text_no_application_maps">No application found to handle maps...</string>
+    <string name="error_exception">Exception</string>
+    <string name="text_dashboard">Dashboard</string>
+    <string name="text_exams_tests">Exams/Tests</string>
+    <string name="text_video_classes">Live Classes</string>
+    <string name="text_my_courses">My Courses</string>
+    <string name="text_mock_test">Our Tests</string>
+    <string name="text_mock_test_new">Mock Tests</string>
+    <string name="text_live_tests">Live Tests</string>
+    <string name="text_free_tests">Free Tests</string>
+    <string name="text_notes">Notes</string>
+    <string name="text_topic_tests">Topic Tests</string>
+    <string name="text_daily_quizzes">Quizzes</string>
+    <string name="text_current_affairs">Current Affairs</string>
+    <string name="text_newspaper">News paper</string>
+    <string name="text_latest_jobs">Job Alert</string>
+    <string name="text_institute_updates">Institute Updates</string>
+    <string name="text_videos">Free Classes</string>
+    <string name="text_help">Help</string>
+    <string name="text_facebook">Facebook</string>
+    <string name="text_telegram">Telegram</string>
+    <string name="text_youtube">Youtube</string>
+    <string name="text_downloads">Downloads</string>
+    <string name="text_question_of_the_day">Word of the day</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="text_getting_started">Getting Started</string>
+    <string name="text_insights_trends"><![CDATA[Live News Channel]]></string>
+    <string name="text_education">Education</string>
+    <string name="text_contact_us">Contact Us</string>
+    <string name="text_about_us">About Us</string>
+    <string name="text_log_out">Log Out</string>
+    <string name="text_profile">Profile</string>
+
+    <string name="text_login">Login</string>
+    <string name="translate_splash_image">translate_splash_image</string>
+    <string name="text_checking_for_updates">Checking for Updates</string>
+
+    <string name="quote_heart_healthy">Nothing makes a person happier than having a happy heart</string>
+    <string name="text_username">Username*</string>
+    <string name="text_password">Password*</string>
+    <string name="text_submit">SUBMIT</string>
+    <string name="text_forgot_your_password">Forgot your password ? </string>
+    <string name="text_reset">Reset </string>
+    <string name="text_register">Register</string>
+    <string name="text_first_name">Full Name*</string>
+    <string name="text_last_name">Last Name</string>
+    <string name="text_male">Male</string>
+    <string name="text_female">Female</string>
+    <string name="text_others">Others</string>
+    <string name="text_email_address">Email Address*</string>
+    <string name="text_phone_number">Phone Number*</string>
+    <string name="text_okay">Okay</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_see_demo_video">See Demo Video</string>
+    <string name="text_purchase_package">Purchase Package</string>
+    <string name="text_sanket_doctor_review">Sanket Doctor Review</string>
+    <string name="text_medical_history">Medical History</string>
+
+
+    <string name="title_no_internet">No internet connection found</string>
+    <string name="err_incorrect_use_pass">Incorrect Username or Password</string>
+    <string name="err_incorrect_use_pass_login_again">Incorrect Username or Password. Login Again</string>
+    <string name="err_something_went_wrong">Something went wrong. Please try again</string>
+    <string name="text_dismiss">Dismiss</string>
+    <string name="err_details_first">Please enter the details first</string>
+    <string name="err_edit_number">Edit Number</string>
+    <string name="text_start_time">Start Time</string>
+    <string name="text_end_time">End Time</string>
+    <string name="error_enter_valid_email">Please enter a valid email to login</string>
+    <string name="error_enter_valid_username">Please enter a valid username to login</string>
+    <string name="error_enter_password">Please enter a password</string>
+    <string name="success_question_of_day">Yay, you have answered question correctly</string>
+    <string name="unattempted_question">You have not attempted this question</string>
+    <string name="error_question_of_day">Ohh, you answered it wrongly. Please check below for correct answer.</string>
+
+    <string name="username_required">Username is required in order to login*</string>
+    <string name="phone_required">Phone number is required in order to login*</string>
+    <string name="email_required">Email is required in case you forgot password*</string>
+    <string name="password_required">Password is required in order to login*</string>
+    <string name="text_do_want_go_back">Do you want to go back?</string>
+    <string name="txt_current_transaction">\"The current transaction will be cancelled and payment will not get processed. \"</string>
+    <string name="txt_about_us">"<b>Pariksha Guru</b> Established on 17th oct 2017 Founders and Directors
+of PARIKSHA GURU CAREER ACADEMY are Mr. VIKRAM
+CHAND , Er. SANJAY GANGWAR, and Mr. DD MAURYA
+who have more than 12 year experience of teaching
+for various competitive exams. it offers coaching
+for entrance examination of various competitive
+examinations like SSC, SBI PO, SBI CLERK, SBI
+SPECIALIST OFFICER,IBPS PO,IBPS CLERK,RBI GRADE
+B OFFICER RBI ASSISTANT, NABARD,SSC (JE), SSC
+(STATISTICAL INVESTIGATOR), NDA, CDS, AIRFORCE
+X AND Y GROUP, ARMY, RAILWAYS, CAPF(ASSISTANT
+COMMANDANT),STATE POLICE OFFICER EXAMS,
+UPTET CTET TGT AND PGT EXAMS, FOUNDATION
+COURSES, CAMPUS PLACEMENT EXAMS, PARIKSHA
+GURU CAREER ACADEMY is a new venture by us to
+cater to the demand and expectation of the students
+aspiring for competitive exams and focuses to be the
+best coaching center in BAREILLY. Apart from just a
+coaching centre, PARIKSHA GURU CAREER ACADEMY
+also focuses on the all-round development of the
+students through expert guidance and unmatched study
+materials issued from us. PARIKSHA GURU CAREER
+ACADEMY aims to be the best coaching centre in India
+with regards to preparations of SSC, SBI, BANK PO AND
+CLERK, IBPS SPECIALIST OFFICER, LIC, INSURANCE
+EXAMS,AIRFORCE, SSC (JE), SSC CPO,SSC (STATISTICAL
+INVESTIGATOR), RAILWAYS, FOUNDATION COURSES,
+STATE POLICE OFFICER EXAMS, UPTET ,CTET ,TGT AND
+PGT EXAMS etc. PARIKSHA GURU CAREER ACADEMY also
+provides the unique facility of Mobile friendly Android
+App Test Series to its students so that they can judge
+their skills anytime they want.</string>
+    <string name="txt_payment_not_processed">Please do not press back button or payment won\'t get processed</string>
+    <string name="txt_click_to_go_back">Click here to go back</string>
+    <string name="txt_payment_cancelled">Payment Cancelled</string>
+    <string name="txt_payment_success">Payment Success, processing your payment</string>
+    <string name="text_course_details">Course Details</string>
+    <string name="text_course_description">Course Description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_previous_classes">Previous Classes</string>
+    <string name="text_upcoming_classes">Upcoming Classes</string>
+    <string name="text_view_more">View More</string>
+
+    <string name="text_module_wise_analysis">Module-Wise Analysis</string>
+    <string name="text_overall_analysis">Overall Analysis</string>
+    <string name="text_total_marks">Total Marks</string>
+    <string name="text_obtained_marks">Obtained Marks</string>
+    <string name="text_module_marks">Module Marks</string>
+    <string name="text_unattempted_questions">Unattempted Questions</string>
+    <string name="text_wrong_answers">Wrong Answers</string>
+    <string name="text_correct_answers">Correct Answers</string>
+    <string name="text_question_wise_analysis">Question-wise Analysis</string>
+
+    <string name="text_refund_Policy">
+    \nTest package :- \n
+\nCancellation and Refunds \n
+
+
+\nTo be eligible for a refund, the student must raise a refund request within 48 hours of purchase of any test package. A 100% refund ( excluding GST and gateway charges ) will be paid to the candidate if he has not attempted more than 1 paper test. No refund will be done after 48 hours.
+
+
+
+\n \nOnline Live Classes refund Policy :- \n
+\nOnce you have made a purchase of Any course via payment gateway, you have 2 calendar days to cancel the purchase. To be eligible for a cancellation and refund of service, You need to send an email composed in English regarding cancellation of request on support@coprepedu.com. Once we receive your cancellation request, we will inspect it and send an acknowledgment in 24 hours. Once your usage of services is verified (whether it is within the limits quoted above), you will get notified in written. If your cancellation is approved, a refund will be initiated to your banking account (credit card or original method of payment) for which you will receive a notification. The refund shall be credited to your banking account within the stipulated time (days) as per your bank’s policies.
+
+
+
+\n\nDuplicate Payment Refund :-
+\nAll the payment done twice by the candidate will be refunded to them within a particular refund time line on their original bank account. After being verified by the institute.
+
+
+</string>
+
+    <string name="text_terms_and_condition">
+        \nPlease read these terms and conditions carefully before using Our Service.
+
+\n\nINTERPRETATION
+\nThe words of which the initial letter is capitalized have meanings defined under the following conditions.
+
+\nThe following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+
+\n\nDEFINITIONS
+\nFor the purposes of these Terms and Conditions:
+
+\n-Affiliate means an entity that controls, is controlled by or is under common control with a party, where “control” means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+
+\n-Company (referred to as either “the Company”, “We”, “Us” or “Our” in this Agreement) refers to Pariksha Guru
+
+\n-Country refers to: Uttar Pradesh, India
+
+\n-Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+
+\n-Service refers to the Website.
+
+\n-Terms and Conditions (also referred as “Terms”) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the Terms and Conditions Generator.
+
+\n-Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+
+\n-Website refers to Pariksha Guru , accessible from
+
+\n-You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+
+\n\nACKNOWLEDGEMENT
+\nThese are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+
+\nYour access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+
+\nBy accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
+
+\nYou represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
+
+\nYour access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+
+\n\nLINKS TO OTHER WEBSITES
+\nOur Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+
+\nThe Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+
+\nWe strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
+
+\n\nTERMINATION
+\nWe may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+
+\nUpon termination, Your right to use the Service will cease immediately.
+
+\n\nLIMITATION OF LIABILITY
+\nNotwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven’t purchased anything through the Service.
+
+\nTo the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+
+\nSome states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party’s liability will be limited to the greatest extent permitted by law.
+
+\n\n“AS IS” AND “AS AVAILABLE” DISCLAIMER
+\nThe Service is provided to You “AS IS” and “AS AVAILABLE” and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective license holders and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchant-ability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.
+
+\nWithout limiting the foregoing, neither the Company nor any of the company’s provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, Trojan horses, worms, malware, time-bombs or other harmful components.
+
+\nSome jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
+
+\n\nGOVERNING LAW
+\nThe laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+
+\n\nDISPUTES RESOLUTION
+\nIf You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
+
+\n\nFOR EUROPEAN UNION (EU) USERS
+\nIf You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
+
+\n\nUNITED STATES LEGAL COMPLIANCE
+\nYou represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a “terrorist supporting” country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
+
+\n\nSEVERABILITY AND WAIVER
+\n\nSEVERABILITY
+\nIf any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+
+\n\nWAIVER
+\nExcept as provided herein, the failure to exercise a right or to require performance of an obligation under this Terms shall not effect a party’s ability to exercise such right or require such performance at any time thereafter nor shall be the waiver of a breach constitute a waiver of any subsequent breach.
+
+\n\nTRANSLATION INTERPRETATION
+\nThese Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
+
+\n\nCHANGES TO THESE TERMS AND CONDITIONS
+\nWe reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
+
+\nBy continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+
+\n\nCONTACT US
+\nIf you have any questions about these Terms and Conditions, You can contact us:
+
+\nBy email: coprepedusolutions@gmail.com
+
+\nBy visiting this page on our website:
+
+\nBy phone number: +91 9454998660
+
+
+    </string>
+
+    <string name="text_privacy_policy">
+        Data Processor\n
+
+In the context of this Policy, Pariksha Guru acts as a data processor for the Personal Information we process.
+
+\n\nInformation We Collect\n
+
+We may collect the following Personal Information about you (wherein “you” refers to students, candidates, and other data subjects using the Apps provided by us):
+
+Biographical data, such as first name and last name;
+Contact information, such as your email address and phone number;
+Test results containing subjective information about your performance;
+Any other information that our clients solicit from you via our Apps, such as date of birth, current address, permanent address, education details, or any other information, as determined by our client in their sole discretion; and
+The tests you are registering for and their date.
+How We Receive Personal Information
+
+       \n \nWe may receive your Personal Information when:\n
+
+You create an account with us;
+You register for and complete a test; or
+Our client submits your Personal Information to the Apps.
+
+
+\n\nHow We Use Your Personal Information\n
+
+We use your Personal Information for the following purposes:\n
+
+To enable your use of our Apps;
+To assess your skills and competencies and provide assessment results to our client; and/or
+To complete any test registrations, purchases, or other transactions you request online.\n
+In addition, We may automatically collect certain non-personally identifiable information to:\n
+
+Improve our Apps, and identify, develop, and offer new or expanded products and services;
+Personalize your user experience in the Apps, and customize the content and/or format of the pages you visit;
+Notify you about updates, products, services, and/or special offers from Us ; or
+Generate aggregate statistical studies and conduct research related to our products and services and the use of our\n
+
+
+\n\nCookies\n
+
+A “cookie” is a small file stored on your device that contains information that may be associated with you. We may use cookies for session management. If you would prefer not to accept cookies, you can alter the configuration of your browser to reject all cookies or some cookies. Note, if you reject certain cookies, you may not be able to access all of our Apps’ features. For more information, please visit https://www.aboutcookies.org/.\n
+
+
+
+\n\nDisclosure of Your Personal Information\n
+
+We disclose your Personal Information to certain third parties with whom we have a direct or indirect business or contract relationship, to provide the products and services you have requested.
+
+We may use third-party vendors to perform certain services for us or on our behalf, such as hosting our Apps, or providing us with IT services. We may share your Personal Information with these third-party vendors solely to enable them to perform such services for us. In providing such Personal Information, we require that those third-party vendors maintain at least the same level of data protection that we maintain for such Personal Information. We do not provide your Personal Information to parties unconnected with the services we provide.
+
+\nWe may also disclose your Personal Information:\n
+
+To the extent required by law or if we have a good-faith belief that such disclosure is necessary in order to comply with official investigations or legal proceedings initiated by governmental and/or law enforcement officials, or private parties, including but not limited to: in response to subpoenas, search warrants, or court orders;
+If we sell or transfer all or a portion of our company’s business interests, assets, or both, or in connection with a corporate merger, consolidation, restructuring, or other company change; or
+To our subsidiaries or affiliates only if necessary for business and operational purposes.\n
+If we must disclose your Personal Information in order to comply with official investigations or legal proceedings initiated by governmental and/or law enforcement officials, we may not be able to ensure that such recipients of your Personal Information will maintain the privacy or security of your Personal Information.
+
+\nWe reserve the right to use, transfer, sell, and share aggregated, anonymous data, which does not include any Personal Information, about our services’ users as a group for any legal business purpose, such as analyzing usage trends and seeking compatible advertisers, sponsors, clients and customers.
+
+\n\nChild Privacy\n
+
+Our Apps are not directed at nor intended for use by children under the age of 13. We do not knowingly allow anyone under 18 to provide any Personal Information on our Apps. Children should always get permission from a parent or guardian before sending Personal Information over the Internet. If you believe your child may have provided us with Personal Information, you can contact us and we will delete the Personal Information or notify our client so that they can delete the Personal Information.
+
+\\n\nData Security and Integrity\n
+
+\nWe have implemented and will maintain technical, organizational, and physical security measures that are reasonably designed to help protect Personal Information from unauthorized processing, such as unauthorized access, disclosure, alteration, or destruction.
+
+\n\nChanges
+
+\n\We reserves the right to change this Policy. If we make any material change to this Policy, we will post the revised Policy to this web page and update the “Effective” date above to reflect the date on which the new Policy became effective. By continuing to use our Apps after we post any such changes, you accept the Privacy Policy as modified.
+
+\nContact Us
+
+\nIf you have a complaint, dispute, or questions regarding this Policy or our treatment of your Personal Information, please write to us.</string>
+
+    <string name="txt_privacy_policy">Privacy  Policy</string>
+    <string name="txt_refund_policy">Refund Policy</string>
+    <string name="txt_terms">Terms and Condition</string>
+    <string name="txt_share_the_app">Share the app</string>
+
+
+    <string name="track_selection_title">Select tracks</string>
+
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+
+    <string name="error_cleartext_not_permitted">Cleartext traffic not permitted</string>
+
+    <string name="error_generic">Playback failed</string>
+
+    <string name="error_unrecognized_abr_algorithm">Unrecognized ABR algorithm</string>
+
+    <string name="error_unrecognized_stereo_mode">Unrecognized stereo mode</string>
+
+    <string name="error_drm_unsupported_before_api_18">Protected content not supported on API levels below 18</string>
+
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+
+    <string name="unsupported_ads_in_concatenation">Playing sample without ads, as ads are not supported in concatenations</string>
+
+    <string name="download_start_error">Failed to start download</string>
+
+    <string name="download_playlist_unsupported">This demo app does not support downloading playlists</string>
+
+    <string name="download_drm_unsupported">This demo app does not support downloading protected content</string>
+
+    <string name="download_scheme_unsupported">This demo app only supports downloading http streams</string>
+
+    <string name="download_live_unsupported">This demo app does not support downloading live content</string>
+
+    <string name="download_ads_unsupported">IMA does not support offline ads</string>
+
+    <string name="prefer_extension_decoders">Prefer extension decoders</string>
+
+    <string name="txt_rs_symbol">\u20B9</string>
+    <string name="b_click_here_b_to_see_your_purchased_courses"><b>Click here</b> to see your purchased courses</string>
+
+    <string name="download_channel_id">download_channel_id</string>
+    <string name="download_channel_name">Download Channel ID</string>
+
+    <string name="download_eta_sec">%1$ds left</string>
+    <string name="download_eta_min">%1$dm %2$ds left</string>
+    <string name="download_eta_hrs">%1$dh %2$dm %3$ds left</string>
+    <string name="download_speed_bytes">%1$d B/s</string>
+    <string name="download_speed_kb">%1$s KB/s</string>
+    <string name="download_speed_mb">%1$s MB/s</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#2A2D36</color>
+    <color name="colorPrimaryDark">#2A2D36</color>
+    <color name="colorPrimaryDarkest">#2A2D36</color>
+    <color name="colorPrimaryDarkNew">#2A2D36</color>
+    <color name="windowBackground">@color/md_grey_100</color>
+    <color name="navigationBarColor">#2A2D36</color>-->
+    <color name="colorPrimary">#172025</color>
+    <color name="colorPrimaryDark">#172025</color>
+    <color name="colorPrimaryDarkest">#172025</color>
+    <color name="colorPrimaryDarkNew">#172025</color>
+    <color name="windowBackground">@color/md_white_1000</color>
+    <color name="navigationBarColor">#172025</color>
+
+   <!-- <color name="colorPrimary">#1a237e</color>
+    <color name="colorPrimaryDark">#1a237e</color>
+    <color name="colorPrimaryDarkest">#1a237e</color>
+    <color name="colorPrimaryDarkNew">#1a237e</color>
+    <color name="windowBackground">@color/md_grey_100</color>
+    <color name="navigationBarColor">#1a237e</color>-->
+
+    <color name="colorPrimaryLight">#b5a8d5</color>
+    <color name="colorAccent">#27BBED</color>
+    <color name="colorAccentLight">#7527BBED</color>
+    <color name="colorAccentSelected">#1fffffff</color>
+    <color name="colorAccentSelectedNew">#10000000</color>
+
+    <color name="colorSave">@color/md_green_700</color>
+    <color name="colorMarkForReview">@color/md_purple_600</color>
+    <color name="colorViewQuestions">@color/md_blue_600</color>
+    <color name="colorClearResponse">@color/md_blue_grey_400</color>
+
+    <color name="brand_green">#39D1B4</color>
+    <color name="brand_green_alpha_15">#2639D1B4</color>
+    <color name="persian_green">#00AD8B</color>
+    <color name="brand_red">#F65A5B</color>
+    <color name="brand_red_alpha_15">#26F65A5B</color>
+    <color name="persian_red">#CC4B4B</color>
+    <color name="bg_like">#757575</color>
+    <color name="bg_like_alpha_15">#26757575</color>
+    <color name="white_transparent">#4DFFFFFF</color>
+
+    <color name="default_text_color">#3e3e3d</color>
+    <color name="default_text_color_checked">#ffffff</color>
+
+    <color name="default_segment_color">#f8f8f8</color>
+    <color name="default_segment_color_checked">#7f6a93</color>
+
+    <color name="default_ripple_color">#e4e4e4</color>
+    <color name="default_ripple_color_checked">#c695a4</color>
+
+    <color name="default_border_color">#e4e4e4</color>
+</resources>

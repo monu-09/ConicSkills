@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewSubCategory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/spacing_small"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewFolder"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/ic_baseline_folder_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintStart_toEndOf="@id/imageViewFolder"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_normal"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/spacing_mid_normal"
+            app:layout_constraintStart_toEndOf="@id/imageViewFolder"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewVideos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_small"
+            android:text="10 videos"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:layout_marginStart="@dimen/spacing_mid_normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_small"
+            android:text="2 PDF"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:layout_marginStart="@dimen/spacing_mid_normal"
+            app:layout_constraintStart_toEndOf="@id/imageViewFolder"
+            app:layout_constraintTop_toBottomOf="@id/textViewVideos"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "World",
+      "imgUrl": "https://public.cprep.in/uploads/47a510033943ce2ff6d8/earth.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/videos/world-news/rssfeed.xml"
+    },
+    {
+      "id": 2,
+      "name": "Sports",
+      "imgUrl": "https://public.cprep.in/uploads/8746b14f29cb7e732f81/sports.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/videos/sports/rssfeed.xml"
+    },
+    {
+      "id": 3,
+      "name": "India",
+      "imgUrl": "https://public.cprep.in/uploads/2166987ea251b99aee8e/india.png",
+      "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
+    },
+    {
+      "id": 4,
+      "name": "Olympic",
+      "imgUrl": "https://public.cprep.in/uploads/559d2856fc38343e2c82/olympic.png",
+      "url": "https://www.hindustantimes.com/feeds/rss/sports/olympics/rssfeed.xml"
+    },
+    {
+      "id": 5,
+      "name": "Science",
+      "imgUrl": "https://public.cprep.in/uploads/94289632f681e80be349/science.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/science/rssfeed.xml"
+    },
+    {
+      "id": 6,
+      "name": "Arts & Culture",
+      "imgUrl": "https://public.cprep.in/uploads/398ac4367a484157fe8f/culture.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/lifestyle/art-culture/rssfeed.xml"
+    },
+    {
+      "id": 7,
+      "name": "Opinion",
+      "imgUrl": "https://public.cprep.in/uploads/d501d9e4f0b5edaccb70/opinion.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/opinion/rssfeed.xml"
+    },
+    {
+      "id": 8,
+      "name": "Latest News",
+      "imgUrl": "https://public.cprep.in/uploads/38ef2c2e43435b9f2846/latest.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/latest-news/rssfeed.xml"
+    },
+    {
+      "id": 9,
+      "name": "Exam",
+      "imgUrl": "https://public.cprep.in/uploads/bcdf3998180ed6abe24b/exam.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/education/exam-results/rssfeed.xml"
+    },
+    {
+      "id": 10,
+      "name": "Competitive Exam",
+      "imgUrl": "https://public.cprep.in/uploads/cc8ee9aa273a7b4d7125/comp_exam.jpg",
+      "url": "https://www.hindustantimes.com/feeds/rss/education/competitive-exams/rssfeed.xml"
+    },
+    {
+      "id": 11,
+      "name": "Education",
+      "imgUrl": "https://public.cprep.in/uploads/b90e2f8e9fa093d01201/education.png",
+      "url": "https://www.hindustantimes.com/feeds/rss/education/rssfeed.xml"
+    },
+    {
+      "id": 12,
+      "name": "Budget",
+      "imgUrl": "https://public.cprep.in/uploads/1a3d8db683b00ca186b4/budget.jpg",
+      "url": "https://public.cprep.in/uploads/1a3d8db683b00ca186b4/budget.jpg"
+    }
+  ]
+}

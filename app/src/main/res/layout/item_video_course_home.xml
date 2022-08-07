@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewEcgOption"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/spacing_small"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayoutHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewNews"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="h,16:9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/spacing_xxsmall"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewNews">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewNewsHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:lines="2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold"
+                android:transitionName="ecg_translation" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewNewsHeading"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewNewsDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="7"
+                    android:ellipsize="end"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/font_normal"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewSubDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayoutNews"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/text_click_to_view"
+                android:textColor="@color/md_grey_500"
+                android:textSize="@dimen/font_small"
+                android:maxLines="3"
+                android:visibility="gone"
+                android:ellipsize="marquee"
+                android:transitionName="ecg_translation" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutVideoLecture"
+                android:layout_below="@id/textViewSubDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/spacing_small">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTotalLecture"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/md_green_800"
+                        android:src="@drawable/ic_time_slot" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewTotalLecture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:text="230"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/md_green_800"
+                        android:textSize="@dimen/font_small" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewLecture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:text="Lectures"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/md_grey_600"
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/colorPrimaryDarkest"
+                        android:src="@drawable/ic_timeline_white_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewTotalDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:text="60"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorPrimaryDarkest"
+                        android:textSize="@dimen/font_small" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewDurationtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:ellipsize="end"
+                        android:layout_gravity="center_vertical"
+                        android:text="mins per lecture"
+                        android:visibility="gone"
+                        android:textColor="@color/md_grey_600"
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/priceHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayoutDetails">
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/md_green_700"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/spacing_xsmall"
+                android:textSize="@dimen/font_large"
+                android:text="Rs. 1000"/>
+
+
+            <TextView
+                android:id="@+id/textViewMRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/spacing_mid_normal"
+                android:textSize="@dimen/font_normal"
+                android:text="Rs. 10000"/>
+
+            <TextView
+                android:id="@+id/textViewDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/md_red_900"
+                android:layout_marginStart="@dimen/spacing_mid_normal"
+                android:textSize="@dimen/font_small"
+                android:gravity="end"
+                android:text="10%"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/md_light_green_900"
+            android:paddingStart="@dimen/spacing_small"
+            android:paddingTop="@dimen/spacing_xxsmall"
+            android:paddingEnd="@dimen/spacing_small"
+            android:paddingBottom="@dimen/spacing_xxsmall"
+            android:text="New"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/active_dot"
+            android:drawablePadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonViewCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_normal"
+            app:cornerRadius="@dimen/spacing_normal"
+            android:text="View Course Videos"
+            app:elevation="@dimen/spacing_normal"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/spacing_small"
+            app:backgroundTint="@color/md_red_600"
+            app:layout_constraintTop_toBottomOf="@id/priceHolder"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

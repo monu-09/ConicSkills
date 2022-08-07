@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/spacing_xhuge"
+    android:layout_marginBottom="@dimen/spacing_xhuge">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewRegister"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animationViewRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:textColor="@color/md_green_800"
+        android:textSize="@dimen/font_xlarge" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/registerTextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:text="Logging you in, please wait..."
+        android:textSize="@dimen/font_normal" />
+
+</RelativeLayout>

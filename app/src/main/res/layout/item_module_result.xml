@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/spacing_mini"
+    app:cardElevation="@dimen/spacing_xsmall"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/spacing_mini">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutModuleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewModuleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_large"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spacing_xsmall"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:background="@color/md_grey_500"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutModuleScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutModuleName">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:layout_marginEnd="@dimen/spacing_mini"
+                android:layout_weight="1"
+                android:background="@drawable/bg_total_marks"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacing_normal"
+                android:paddingBottom="@dimen/spacing_normal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/text_module_marks"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_normal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewModuleTotalMarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_xlarge"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_mini"
+                android:layout_marginEnd="@dimen/spacing_normal"
+                android:layout_weight="1"
+                android:background="@drawable/bg_obtained_marks"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacing_normal"
+                android:paddingBottom="@dimen/spacing_normal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/text_obtained_marks"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_normal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewModuleScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_xlarge"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutModuleScore"
+            app:layout_constraintBottom_toBottomOf="@id/linearLayout"
+            tools:ignore="MissingConstraints">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintDimensionRatio="h, 2:1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCorrectPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/pieChart"
+                app:layout_constraintBottom_toTopOf="@id/pieChart"
+                app:layout_constraintEnd_toStartOf="@id/pieChart"
+                app:layout_constraintStart_toEndOf="@id/pieChart"
+                android:textColor="@color/persian_green"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct"
+                app:layout_constraintTop_toBottomOf="@id/textViewCorrectPercentage"
+                app:layout_constraintEnd_toStartOf="@id/textViewCorrectPercentage"
+                app:layout_constraintStart_toEndOf="@id/textViewCorrectPercentage"
+                android:textColor="@color/persian_green"
+                android:textSize="@dimen/font_xsmall"
+                android:textStyle="bold" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="@dimen/spacing_mini"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutModuleScore">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_green_light_background"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/spacing_normal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/spacing_mini"
+                        android:paddingBottom="@dimen/spacing_mini"
+                        app:srcCompat="@drawable/ic_check_circle_white_24dp"
+                        app:tint="@color/persian_green" />
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewCorrectQuestions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_large"
+                    android:textColor="@color/brand_green"
+                    android:textSize="@dimen/font_xlarge"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xsmall"
+                android:background="@drawable/rounded_red_light_background"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/spacing_normal"
+                tools:ignore="RtlSymmetry">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/spacing_mini"
+                        android:paddingBottom="@dimen/spacing_mini"
+                        app:srcCompat="@drawable/ic_close_circle"
+                        app:tint="@color/persian_red" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewInCorrectQuestions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_large"
+                    android:textColor="@color/brand_red"
+                    android:textSize="@dimen/font_xlarge"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xsmall"
+                android:background="@drawable/rounded_grey_light_background"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/spacing_normal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/spacing_mini"
+                        android:paddingBottom="@dimen/spacing_mini"
+                        app:srcCompat="@drawable/ic_block_white_24dp"
+                        app:tint="@color/bg_like" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewUnAttemptedQuestions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="24dp"
+                    android:textColor="@color/bg_like"
+                    android:textSize="@dimen/font_xlarge"
+                    android:textStyle="bold">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_grey_100</item>
+        <item name="colorPrimaryDark">@color/md_grey_100</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/md_white_1000</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="material_drawer_selected_text">@color/colorAccent</item>
+        <item name="material_drawer_primary_icon">@color/md_white_1000</item>
+        <item name="material_drawer_divider">#10FAFAFA</item>
+        <item name="material_drawer_selected">@color/colorAccentSelected</item>
+        <item name="android:navigationBarColor">@color/windowBackground</item>
+    </style>
+
+    <style name="AppThemeEditTextHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

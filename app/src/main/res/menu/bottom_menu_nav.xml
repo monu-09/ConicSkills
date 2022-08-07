@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:orderInCategory="1"
+        android:title="Home"
+        app:showAsAction="always"
+        android:color="@color/md_red_600"/>
+
+    <item
+        android:id="@+id/testSeries"
+        android:icon="@drawable/ic_library_books_white_24dp"
+        android:orderInCategory="1"
+        android:title="Test Series"
+        app:showAsAction="always"
+        android:color="@color/md_teal_900"/>
+
+    <item
+        android:id="@+id/quizzes"
+        android:icon="@drawable/ic_baseline_alarm_24"
+        android:orderInCategory="1"
+        android:title="Quiz"
+        app:showAsAction="always"
+        android:color="@color/md_light_blue_900"/>
+
+    <item
+        android:id="@+id/downloads"
+        android:icon="@drawable/ic_download"
+        android:orderInCategory="1"
+        android:title="@string/text_downloads"
+        app:showAsAction="always"
+        android:color="@color/md_amber_900"/>
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help_outline_white_24dp"
+        android:orderInCategory="2"
+        android:title="@string/text_help"
+        app:showAsAction="always"
+        android:color="@color/md_green_900"/>
+</menu>

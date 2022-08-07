@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Dashboard</item>
+        <item>My Account</item>
+        <item>Messages</item>
+        <item>Cart</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+    <string-array name="heightArray">
+        <item>91 cm (3\' 0")</item>
+        <item>92 cm</item>
+        <item>93 cm</item>
+        <item>94 cm (3\' 1")</item>
+        <item>95 cm</item>
+        <item>96 cm</item>
+        <item>97 cm (3\' 2")</item>
+        <item>98 cm</item>
+        <item>99 cm (3\' 3")</item>
+        <item>100 cm</item>
+        <item>101 cm</item>
+        <item>102 cm (3\' 4")</item>
+        <item>103 cm</item>
+        <item>104 cm (3\' 5")</item>
+        <item>105 cm</item>
+        <item>106 cm </item>
+        <item>107 cm (3\' 6"</item>
+        <item>108 cm</item>
+        <item>109 cm (3\' 7")</item>
+        <item>110 cm</item>
+        <item>111 cm</item>
+        <item>112 cm (3\' 8")</item>
+        <item>113 cm</item>
+        <item>114 cm (3\' 9")</item>
+        <item>115 cm</item>
+        <item>116 cm</item>
+        <item>117 cm (3\' 10")</item>
+        <item>118 cm</item>
+        <item>119 cm (3\' 11")</item>
+        <item>120 cm</item>
+        <item>121 cm</item>
+        <item>122 cm (4\' 0")</item>
+        <item>123 cm</item>
+        <item>124 cm (4\' 1")</item>
+        <item>125 cm</item>
+        <item>126 cm</item>
+        <item>127 cm (4\' 2")</item>
+        <item>128 cm</item>
+        <item>129 cm</item>
+        <item>130 cm (4\' 3")</item>
+        <item>131 cm</item>
+        <item>132 cm (4\' 4")</item>
+        <item>133 cm</item>
+        <item>134 cm</item>
+        <item>135 cm (4\' 5")</item>
+        <item>136 cm</item>
+        <item>137 cm (4\' 6")</item>
+        <item>138 cm</item>
+        <item>139 cm</item>
+        <item>140 cm (4\' 7")</item>
+        <item>141 cm</item>
+        <item>142 cm (4\' 8")</item>
+        <item>143 cm</item>
+        <item>144 cm</item>
+        <item>145 cm (4\' 9")</item>
+        <item>146 cm</item>
+        <item>147 cm (4\' 10")</item>
+        <item>148 cm</item>
+        <item>149 cm</item>
+        <item>150 cm (4\' 11")</item>
+        <item>151 cm</item>
+        <item>152 cm (5\' 0")</item>
+        <item>153 cm</item>
+        <item>154 cm</item>
+        <item>155 cm (5\' 1")</item>
+        <item>156 cm</item>
+        <item>157 cm (5\' 2")</item>
+        <item>158 cm</item>
+        <item>159 cm</item>
+        <item>160 cm (5\' 3")</item>
+        <item>161 cm</item>
+        <item>162 cm</item>
+        <item>163 cm (5\' 4")</item>
+        <item>164 cm</item>
+        <item>165 cm (5\' 5")</item>
+        <item>166 cm</item>
+        <item>167 cm</item>
+        <item>168 cm (5\' 6")</item>
+        <item>169 cm</item>
+        <item>170 cm (5\' 7")</item>
+        <item>171 cm</item>
+        <item>172 cm</item>
+        <item>173 cm (5\' 8")</item>
+        <item>174 cm</item>
+        <item>175 cm (5\' 9")</item>
+        <item>176 cm</item>
+        <item>177 cm</item>
+        <item>178 cm (5\' 10")</item>
+        <item>179 cm</item>
+        <item>180 cm (5\' 11")</item>
+        <item>181 cm</item>
+        <item>182 cm</item>
+        <item>183 cm (6\' 0")</item>
+        <item>184 cm</item>
+        <item>185 cm (6\' 1")</item>
+        <item>186 cm</item>
+        <item>187 cm</item>
+        <item>188 cm (6\' 2")</item>
+        <item>189 cm</item>
+        <item>190 cm</item>
+        <item>191 cm (6\' 3")</item>
+        <item>192 cm</item>
+        <item>193 cm (6\' 4")</item>
+        <item>194 cm</item>
+        <item>195 cm</item>
+        <item>196 cm (6\' 5")</item>
+        <item>197 cm</item>
+        <item>198 cm (6\' 6")</item>
+        <item>199 cm</item>
+        <item>200 cm</item>
+        <item>201 cm (6\' 7")</item>
+        <item>202 cm</item>
+        <item>203 cm (6\' 8")</item>
+        <item>204 cm</item>
+        <item>205 cm</item>
+        <item>206 cm (6\' 9")</item>
+        <item>207 cm</item>
+        <item>208 cm (6\' 10")</item>
+        <item>209 cm</item>
+        <item>210 cm</item>
+        <item>211 cm (6\' 11")</item>
+        <item>212 cm</item>
+        <item>213 cm (7\' 0")</item>
+        <item>214 cm</item>
+        <item>215 cm</item>
+        <item>216 cm (7\' 1")</item>
+        <item>217 cm</item>
+        <item>218 cm (7\' 2")</item>
+        <item>219 cm</item>
+        <item>220 cm (7\' 3")</item>
+    </string-array>
+
+    <string-array name="speeds">
+        <item>0.5x</item>
+        <item>1x</item>
+        <item>1.2x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="speed_values">
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.conicskill.app.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/liveTest"
+        android:name="com.conicskill.app.ui.home.MockTestFragment"
+        android:label="MockTestFragment"
+        tools:layout="@layout/mock_test_fragment">
+
+
+        <argument
+            android:name="type"
+            android:defaultValue='""'
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="fromWhere"
+            android:defaultValue="quiz"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/videoClasses"
+        android:name="com.conicskill.app.ui.home.VideoCourseListingFragment"
+        android:label="VideoCourseFragment"
+        tools:layout="@layout/video_course_listing_new_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ourTest"
+        android:name="com.conicskill.app.ui.home.MockTestFragment"
+        android:label="MockTestFragment"
+        tools:layout="@layout/mock_test_fragment">
+
+
+        <argument
+            android:name="type"
+            android:defaultValue='null'
+            app:argType="string" />
+        <argument
+            android:name="fromWhere"
+            android:defaultValue="live"
+            app:argType="string" />
+    </fragment>
+</navigation>

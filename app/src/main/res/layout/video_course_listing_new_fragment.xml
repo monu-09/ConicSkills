@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <!-- Adding 15 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+            <include layout="@layout/item_series_list_placeholder" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <co.ceryle.segmentedbutton.SegmentedButtonGroup
+        android:id="@+id/segmentButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:layout_marginEnd="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:elevation="2dp"
+        app:sbg_backgroundColor="@color/md_white_1000"
+        app:sbg_borderColor="@color/md_white_1000"
+        app:sbg_borderSize="1dp"
+        app:sbg_dividerColor="@color/md_white_1000"
+        app:sbg_dividerPadding="5dp"
+        app:sbg_dividerSize="1dp"
+        app:sbg_position="0"
+        app:sbg_radius="@dimen/spacing_normal"
+        app:sbg_rippleColor="@color/colorPrimary"
+        app:sbg_selectorColor="@color/colorPrimaryDark"
+        app:sbg_animateSelector="linearOutSlowIn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:sb_text="Videos "
+            app:sb_textColor_onSelection="@color/md_white_1000"
+            app:sb_textGravity="center" />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:sb_drawableGravity="top"
+            app:sb_text="Notes"
+            app:sb_textColor_onSelection="@color/md_white_1000" />
+    </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTestList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/segmentButtonGroup" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotes"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/segmentButtonGroup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

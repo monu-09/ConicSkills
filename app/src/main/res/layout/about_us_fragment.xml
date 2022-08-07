@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/icon_square"
+                app:layout_constraintDimensionRatio="h, 850:831"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/font_xlarge"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:text="Pariksha Guru"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/spacing_small"
+            android:visibility="gone"
+            android:text="Selected In:- PAC BT-27,RLY T.A., CHSL-2016"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_normal"
+            android:layout_margin="@dimen/spacing_small"
+            android:singleLine="false"
+            android:text="@string/txt_about_us"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

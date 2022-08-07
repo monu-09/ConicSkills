@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/md_white_1000</color>
+    <color name="colorPrimaryDark">#2A2D36</color>
+    <color name="colorPrimaryDarkest">#2A2D36</color>
+    <color name="windowBackground">#2A2D36</color>
+
+<!--    <color name="colorPrimary">@color/md_blue_grey_500</color>
+    <color name="colorPrimaryDark">@color/md_blue_grey_700</color>
+    <color name="colorPrimaryDarkest">@color/md_blue_grey_900</color>-->
+    <color name="colorPrimaryLight">#b5a8d5</color>
+    <color name="colorAccent">#ffae00</color>
+    <color name="colorAccentLight">#75ffe04b</color>
+    <color name="colorAccentSelected">#1fffffff</color>
+    <!--<color name="colorAccentSelected">#1fffffff</color>-->
+</resources>

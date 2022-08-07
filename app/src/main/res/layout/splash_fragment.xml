@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_black_1000"
+        android:visibility="gone">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/videoViewPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:surface_type="texture_view"
+            app:use_artwork="true"
+            app:use_controller="false" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewSplash"
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="h, 845:1030"
+                android:src="@drawable/icon_square"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:transitionName="@string/translate_splash_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cardiacManagement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewSplash"
+                android:layout_marginStart="@dimen/spacing_xhuge"
+                android:layout_marginEnd="@dimen/spacing_xhuge"
+                android:gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_xxlarge"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewAnimation"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/cardiacManagement"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/spacing_small"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:backgroundTint="@color/colorAccent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCheckUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewAnimation"
+                android:gravity="center"
+                android:text="@string/text_checking_for_updates"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold|italic"
+                android:visibility="gone" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewSplash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/imageViewLogo"
+                android:gravity="center"
+                android:text="@string/text_designed_by" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:src="@drawable/icon_header_new" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

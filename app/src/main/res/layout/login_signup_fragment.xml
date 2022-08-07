@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewLogoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_huge"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_huge"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_weight="2"
+            android:padding="@dimen/spacing_normal"
+            android:transitionName="@string/translate_splash_image"
+            app:srcCompat="@drawable/icon_square" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xhuge"
+                android:layout_marginEnd="@dimen/spacing_xhuge"
+                android:background="@drawable/drawable_cornered_bg_purple"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:hapticFeedbackEnabled="true"
+                android:paddingTop="@dimen/spacing_mini"
+                android:paddingBottom="@dimen/spacing_mini"
+                android:text="@string/text_login"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/font_large"
+                android:transitionName="@string/text_login" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xhuge"
+                android:layout_marginTop="@dimen/spacing_xlarge"
+                android:layout_marginEnd="@dimen/spacing_xhuge"
+                android:background="@drawable/drawable_cornered_bg_purple"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:hapticFeedbackEnabled="true"
+                android:paddingTop="@dimen/spacing_mini"
+                android:paddingBottom="@dimen/spacing_mini"
+                android:text="@string/text_register"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/font_large"
+                android:transitionName="@string/text_register" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

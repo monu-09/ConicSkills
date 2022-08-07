@@ -1,0 +1,6 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ecg_loader" >
+    <target
+        android:name="rect2"
+        android:animation="@anim/change_color" />
+</animated-vector>

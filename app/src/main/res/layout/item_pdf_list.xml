@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewSubCategory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/spacing_small"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewFolder"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_folder_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_mid_normal"
+            android:text="@{}"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewFolder"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonView"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/spacing_mid_normal"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="View PDF"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="5dp"
+            app:elevation="5dp"
+            app:icon="@drawable/ic_eyes"
+            app:iconSize="15dp"
+            app:iconTint="@color/colorPrimaryDark"
+            app:layout_constraintStart_toEndOf="@id/imageViewFolder"
+            app:layout_constraintTop_toBottomOf="@id/textViewName"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="0.5dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/md_red_600"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="5dp"
+            app:elevation="5dp"
+            app:icon="@drawable/ic_baseline_delete_outline_24"
+            app:iconSize="15dp"
+            app:iconTint="@color/md_red_600"
+            app:layout_constraintStart_toEndOf="@id/buttonView"
+            app:layout_constraintTop_toBottomOf="@id/textViewName"
+            app:strokeColor="@color/md_red_600"
+            app:strokeWidth="0.5dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

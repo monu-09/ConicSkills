@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:layout_height="wrap_content">
+
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/item_notes_chip"
+        android:layout_weight="5"
+        android:padding="10dp"
+
+        android:text="Maths_chapter1_matrix.pdf"
+        android:textStyle="bold"
+        android:textColor="@color/md_blue_900"
+
+        app:chipIcon="@drawable/pdf"
+        app:chipIconSize="25dp"
+        app:chipCornerRadius="10dp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:text="~DD/MM/YYYY"/>
+    </LinearLayout>
+
+</LinearLayout>

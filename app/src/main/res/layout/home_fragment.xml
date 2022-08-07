@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_mid_normal"
+                android:text="Welcome"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/constraintNormal"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:layout_below="@id/textWelcome">
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselViewHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    app:fillColor="@color/colorPrimaryDark"
+                    app:indicatorGravity="bottom|center_horizontal"
+                    app:indicatorVisibility="visible"
+                    android:visibility="gone"
+                    app:layout_constraintDimensionRatio="h,20:9"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:pageTransformInterval="1000"
+                    app:pageTransformer="slide_over"
+                    app:radius="@dimen/spacing_xxsmall"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="1dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_below="@id/constraintNormal"
+                android:layout_marginTop="@dimen/spacing_small" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCarousel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerViewFeatures"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.synnapps.carouselview.CarouselView
+                        android:id="@+id/carouselViewQuestion"
+                        android:layout_width="0dp"
+                        android:visibility="gone"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        app:fillColor="@color/colorPrimaryDark"
+                        app:indicatorGravity="bottom|center_horizontal"
+                        app:indicatorVisibility="visible"
+                        app:layout_constraintDimensionRatio="h,20:9"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:pageTransformInterval="1000"
+                        app:pageTransformer="slide_over"
+                        app:radius="@dimen/spacing_xxsmall"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCourses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewUpcomingClasses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_normal"
+                    android:text="@string/text_upcoming_classes"
+                    android:visibility="gone"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/font_normal"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewUpcoming"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/spacing_normal"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewNoUpcomingClasses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginEnd="@dimen/spacing_large"
+                    android:text="Currently there are no upcoming classes scheduled for this batch"
+                    android:textAlignment="center"
+                    android:visibility="gone"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/font_large" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
